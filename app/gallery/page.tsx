@@ -103,8 +103,10 @@ export default function Gallery() {
               className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105"
             >
               <div className="relative aspect-square">
-                <img
+                <Image
                   src={photo.image}
+                  alt={photo.title} 
+                  fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />

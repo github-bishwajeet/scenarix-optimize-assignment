@@ -15,7 +15,7 @@ export default function Demo() {
     setIsGenerating(true);
     // Simulate API call
     await new Promise((resolve) => setTimeout(resolve, 2000));
-    setGeneratedImage("/11.png");
+    setGeneratedImage("/11.webp");
     setIsGenerating(false);
   };
 

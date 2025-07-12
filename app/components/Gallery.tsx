@@ -13,8 +13,12 @@ export default function Gallery() {
               key={num}
               className="relative aspect-square overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow"
             >
-              <img
-                src={`/${num}.png`}
+              <Image
+                src={`/${num}.webp`}
+                loading="lazy"
+                alt={`${num}.webp`}
+                width={300}
+                height={300}
                 className="object-cover hover:scale-105 transition-transform duration-300"
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
               />

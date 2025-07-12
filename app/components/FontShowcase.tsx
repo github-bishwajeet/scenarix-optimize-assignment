@@ -1,127 +1,42 @@
-const fonts = [
-  {
-    name: "Dancing Script",
-    text: "AI Art Generator",
-    className: "font-['Dancing_Script']",
-  },
-  { name: "Anton", text: "AI Art Generator", className: "font-['Anton']" },
-  {
-    name: "Bebas Neue",
-    text: "AI Art Generator",
-    className: "font-['Bebas_Neue']",
-  },
-  { name: "Charm", text: "AI Art Generator", className: "font-['Charm']" },
-  { name: "Cinzel", text: "AI Art Generator", className: "font-['Cinzel']" },
-  {
-    name: "Comfortaa",
-    text: "AI Art Generator",
-    className: "font-['Comfortaa']",
-  },
-  {
-    name: "Courgette",
-    text: "AI Art Generator",
-    className: "font-['Courgette']",
-  },
-  {
-    name: "Crimson Text",
-    text: "AI Art Generator",
-    className: "font-['Crimson_Text']",
-  },
-  { name: "Dosis", text: "AI Art Generator", className: "font-['Dosis']" },
-  {
-    name: "Great Vibes",
-    text: "AI Art Generator",
-    className: "font-['Great_Vibes']",
-  },
-  {
-    name: "Indie Flower",
-    text: "AI Art Generator",
-    className: "font-['Indie_Flower']",
-  },
-  {
-    name: "Josefin Sans",
-    text: "AI Art Generator",
-    className: "font-['Josefin_Sans']",
-  },
-  { name: "Kalam", text: "AI Art Generator", className: "font-['Kalam']" },
-  { name: "Lato", text: "AI Art Generator", className: "font-['Lato']" },
-  {
-    name: "Libre Baskerville",
-    text: "AI Art Generator",
-    className: "font-['Libre_Baskerville']",
-  },
-  { name: "Lobster", text: "AI Art Generator", className: "font-['Lobster']" },
-  {
-    name: "Montserrat",
-    text: "AI Art Generator",
-    className: "font-['Montserrat']",
-  },
-  {
-    name: "Open Sans",
-    text: "AI Art Generator",
-    className: "font-['Open_Sans']",
-  },
-  { name: "Oswald", text: "AI Art Generator", className: "font-['Oswald']" },
-  {
-    name: "Pacifico",
-    text: "AI Art Generator",
-    className: "font-['Pacifico']",
-  },
-  {
-    name: "Playfair Display",
-    text: "AI Art Generator",
-    className: "font-['Playfair_Display']",
-  },
-  { name: "Poppins", text: "AI Art Generator", className: "font-['Poppins']" },
-  {
-    name: "Quicksand",
-    text: "AI Art Generator",
-    className: "font-['Quicksand']",
-  },
-  { name: "Raleway", text: "AI Art Generator", className: "font-['Raleway']" },
-  { name: "Roboto", text: "AI Art Generator", className: "font-['Roboto']" },
-  {
-    name: "Roboto Condensed",
-    text: "AI Art Generator",
-    className: "font-['Roboto_Condensed']",
-  },
-  {
-    name: "Roboto Mono",
-    text: "AI Art Generator",
-    className: "font-['Roboto_Mono']",
-  },
-  {
-    name: "Roboto Slab",
-    text: "AI Art Generator",
-    className: "font-['Roboto_Slab']",
-  },
-  { name: "Rubik", text: "AI Art Generator", className: "font-['Rubik']" },
-  {
-    name: "Source Sans Pro",
-    text: "AI Art Generator",
-    className: "font-['Source_Sans_Pro']",
-  },
-  {
-    name: "Source Serif Pro",
-    text: "AI Art Generator",
-    className: "font-['Source_Serif_Pro']",
-  },
-  {
-    name: "Space Grotesk",
-    text: "AI Art Generator",
-    className: "font-['Space_Grotesk']",
-  },
-  {
-    name: "Space Mono",
-    text: "AI Art Generator",
-    className: "font-['Space_Mono']",
-  },
-  { name: "Ubuntu", text: "AI Art Generator", className: "font-['Ubuntu']" },
-  {
-    name: "Work Sans",
-    text: "AI Art Generator",
-    className: "font-['Work_Sans']",
-  },
+import { fontClasses, FontName } from "./fonts"; // Adjust path if needed
+
+// Update your fonts array
+const fonts: { name: FontName; text: string }[] = [
+  { name: "Dancing Script", text: "AI Art Generator" },
+  { name: "Anton", text: "AI Art Generator" },
+  { name: "Bebas Neue", text: "AI Art Generator" },
+  { name: "Charm", text: "AI Art Generator" },
+  { name: "Cinzel", text: "AI Art Generator" },
+  { name: "Comfortaa", text: "AI Art Generator" },
+  { name: "Courgette", text: "AI Art Generator" },
+  { name: "Crimson Text", text: "AI Art Generator" },
+  { name: "Dosis", text: "AI Art Generator" },
+  { name: "Great Vibes", text: "AI Art Generator" },
+  { name: "Indie Flower", text: "AI Art Generator" },
+  { name: "Josefin Sans", text: "AI Art Generator" },
+  { name: "Kalam", text: "AI Art Generator" },
+  { name: "Lato", text: "AI Art Generator" },
+  { name: "Libre Baskerville", text: "AI Art Generator" },
+  { name: "Lobster", text: "AI Art Generator" },
+  { name: "Montserrat", text: "AI Art Generator" },
+  { name: "Open Sans", text: "AI Art Generator" },
+  { name: "Oswald", text: "AI Art Generator" },
+  { name: "Pacifico", text: "AI Art Generator" },
+  { name: "Playfair Display", text: "AI Art Generator" },
+  { name: "Poppins", text: "AI Art Generator" },
+  { name: "Quicksand", text: "AI Art Generator" },
+  { name: "Raleway", text: "AI Art Generator" },
+  { name: "Roboto", text: "AI Art Generator" },
+  { name: "Roboto Condensed", text: "AI Art Generator" },
+  { name: "Roboto Mono", text: "AI Art Generator" },
+  { name: "Roboto Slab", text: "AI Art Generator" },
+  { name: "Rubik", text: "AI Art Generator" },
+  { name: "Source Sans Pro", text: "AI Art Generator" },
+  { name: "Source Serif Pro", text: "AI Art Generator" },
+  { name: "Space Grotesk", text: "AI Art Generator" },
+  { name: "Space Mono", text: "AI Art Generator" },
+  { name: "Ubuntu", text: "AI Art Generator" },
+  { name: "Work Sans", text: "AI Art Generator" },
 ];
 
 export default function FontShowcase() {
@@ -140,7 +55,12 @@ export default function FontShowcase() {
               key={font.name}
               className="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
             >
-              <div className={`text-2xl mb-4 ${font.className}`}>
+              {/* Type assertion remains here */}
+              <div
+                className={`text-2xl mb-4 ${
+                  fontClasses[font.name as FontName]
+                }`}
+              >
                 {font.text}
               </div>
               <div className="text-sm text-gray-600 dark:text-gray-300">
