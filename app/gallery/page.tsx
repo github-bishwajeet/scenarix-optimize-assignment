@@ -21,10 +21,6 @@ export default function Gallery() {
 
   useEffect(() => {
     const fetchPhotos = async () => {
-      console.log(
-        "fetching photos with API key",
-        process.env.NEXT_PUBLIC_PEXELS_API_KEY
-      );
       try {
         const client = createClient(
           process.env.NEXT_PUBLIC_PEXELS_API_KEY || ""
@@ -107,6 +103,7 @@ export default function Gallery() {
                   src={photo.image}
                   alt={photo.title} 
                   fill
+                  priority
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />

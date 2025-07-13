@@ -9,6 +9,7 @@ export default function Hero() {
         loop
         muted
         playsInline
+        preload="auto"
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
         <source src="/7670835-uhd_3840_2160_30fps.mp4" type="video/mp4" />

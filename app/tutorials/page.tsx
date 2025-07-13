@@ -69,7 +69,7 @@ export default function Tutorials() {
   );
 }
 
-const tutorials = [
+export const tutorials = [
   {
     title: "Getting Started with MagicMoments",
     description:

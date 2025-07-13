@@ -22,7 +22,7 @@ A chronological list of significant changes or updates to the project.
 ### Component & Asset Updates
 
 1.  **Where**: `app/components/Hero.tsx`
-2.  **What**: Corrected the video file name in the Hero component from `2.mp4` to `7670835-uhd_3840_2160_30fps.mp4 and reduced the size of video from ~60mb to ~16mb with minimal visible difference in quality`.
+2.  **What**: Corrected the video file name in the Hero component from `2.mp4` to `7670835-uhd_3840_2160_30fps.mp4 and reduced the size of video from ~60mb to ~6mb with negligible visible difference in quality`.
 3.  **Why**: To fix a 404 error caused by an incorrect file name & optimise the page speed.
 
 ---
@@ -35,7 +35,7 @@ A chronological list of significant changes or updates to the project.
 
 ---
 
-1.  **Where**: `public/1.webp`, `public/2.webp`, `public/3.webp`, `public/4.webp`, `public/5.webp`, `public/6.webp`, `public/7.webp`, `public/8.webp`, `public/9.webp`, `public/10.webp`, `public/11.webp`
+1.  **Where**: `public/1.png`, `public/2.png`, `public/3.png`, `public/4.png`, `public/5.png`, `public/6.png`, `public/7.png`, `public/8.png`, `public/9.png`, `public/10.png`, `public/11.png`
 2.  **What**: Replaced the extremely affecting png images to modern optimised webp images.
 3.  **Why**: To significantly improve page performance using modern image format as webp.
 
@@ -71,11 +71,36 @@ A chronological list of significant changes or updates to the project.
 ### Header ui fix while scroll
 
 1.  **Where**: `app/components/AppBar.tsx`
-2.  **What**: Show the glass background of header nav while scrolling.
-3.  **Why**: To fix the invisiblity of header navigation while scrolling and getting blended into the crossing sections.
+2.  **What**: Show the glass background of header nav while scrolling and added the missing/needed navigation links.
+3.  **Why**: To fix the invisiblity of header navigation while scrolling and getting blended into the crossing sections along with the accessibility of missing navigation links such as demo, contact, tutorial & pricing.
+
+---
+
+### Removed the console log which was exposing the NEXT_PUBLIC_PEXELS_API_KEY 
+
+1.  **Where**: `app/gallery/page.tsx`
+2.  **What**: Removed console log for env var NEXT_PUBLIC_PEXELS_API_KEY.
+3.  **Why**: To avoid exposing the critical environment variable data.
+
+---
+
+### Unreachable page fix
+
+1.  **Where**: `app/blog/page.tsx, app/blog/[slug]/page.tsx, app/components/BlogPostCard.tsx, app/tutorials/page.tsx, app/tutorials/[slug]/page.tsx`
+2.  **What**: Availability and accessibility of details page for blog and tutorial.
+3.  **Why**: To fix the 404 error for blog and tutorial.
+
+---
+
+### Unique key fix for the pricing card
+
+1.  **Where**: `app/pricing/page.tsx`
+2.  **What**: Duplicate key names.
+3.  **Why**: To fix duplicate key names for the childrens.
 
 ---
 
 ### Consent
 
 This document has been audited manually by @author Bishwajeet Kumar and finetuned using GTP o4-mini.
+Total time spent was 5hours on code review & auditing, performance audit via Lighthouse 12.0, debugging & updates, optimisation & improvements, UI fixes and final touch.

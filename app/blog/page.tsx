@@ -22,7 +22,7 @@ export default function Blog() {
   );
 }
 
-const blogPosts = [
+export const blogPosts = [
   {
     title: "The Future of AI Art Generation",
     excerpt:

@@ -12,16 +12,19 @@ interface BlogPost {
 
 interface BlogPostCardProps {
   post: BlogPost;
+  readmore?:boolean;
+  imageHeight?: string;
 }
 
-export default function BlogPostCard({ post }: BlogPostCardProps) {
+export default function BlogPostCard({ post, readmore = true, imageHeight = 'h-48' }: BlogPostCardProps) {
   return (
     <article className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
-      <div className="relative h-48">
-        <Image src={post.image} loading="lazy" alt={post.title} 
-          width={600}
-          height={400}
-         className="object-cover h-48" />
+      <div className={`relative ${imageHeight}`}>
+        <Image src={post.image} alt={post.title} 
+          width={800}
+          height={600}
+          priority
+         className={`object-cover ${imageHeight}`} />
       </div>
       <div className="p-6">
         <div className="flex items-center mb-4">
@@ -35,6 +38,7 @@ export default function BlogPostCard({ post }: BlogPostCardProps) {
         </div>
         <h2 className="text-xl font-semibold mb-2">{post.title}</h2>
         <p className="text-gray-600 dark:text-gray-300 mb-4">{post.excerpt}</p>
+        {readmore ? (
         <Link
           href={post.link}
           className="inline-flex items-center text-purple-600 hover:text-purple-700"
@@ -54,6 +58,7 @@ export default function BlogPostCard({ post }: BlogPostCardProps) {
             />
           </svg>
         </Link>
+        ) : null}
       </div>
     </article>
   );
