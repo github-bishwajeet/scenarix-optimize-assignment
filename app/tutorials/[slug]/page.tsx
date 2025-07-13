@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {tutorials} from "../page";
+import {tutorials} from "../tutorialData";
 
 interface TutorialPageProps {
   params: {

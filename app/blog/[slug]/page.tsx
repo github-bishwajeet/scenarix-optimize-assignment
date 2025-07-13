@@ -1,5 +1,5 @@
 import BlogPostCard from "../../components/BlogPostCard";
-import {blogPosts} from "../page";
+import {blogPosts} from "../blogData";
 
 interface BlogPostPageProps {
   params: {
